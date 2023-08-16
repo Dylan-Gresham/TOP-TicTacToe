@@ -1,0 +1,58 @@
+* {
+    font-family: 'Montserrat', sans-serif, system-ui;
+    font-size: 18px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+#nameAndTiles, #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+}
+
+#nameAndTiles {
+    gap: 2rem;
+    -webkit-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.75);
+}
+
+#namesAndTiles > .playerSpan {
+    display: flex;
+    gap: calc(1rem/2rem);
+}
+
+#nameAndTiles > .playerSpan > input {
+    width: 40%;
+    appearance: none;
+    outline: none;
+    padding: 4px;
+    border: 1px solid #606060;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#footer {
+    -webkit-box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
+}

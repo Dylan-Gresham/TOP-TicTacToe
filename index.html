@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <!--Link Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <script src="./script.js" defer></script>
     <title>TicTacToe</title>
 </head>
-<body style="width: 95vw; height: 95vh; display: flex; flex: 1; justify-content: center; align-items: center;">
-    <p>Currently JavaScript Only.</p>
+<body>
+    <div id="nameAndTiles">
+        <span class="playerSpan">
+            <label for="playerOneName">Player One's Name:</label>
+            <input type="text" name="playerOneName" id="playerOneName">
+        </span>
+        <span class="playerSpan">
+            <label for="playerTwoName">Player Two's Name:</label>
+            <input type="text" name="playerTwoName" id="playerTwoName">
+        </span>
+    </div>
+    <div id="gameBoardContainer">
+        <!--Game board row content will be added via JavaScript-->
+        <div id="boardRowOne">
+
+        </div>
+        <div id="boardRowTwo">
+
+        </div>
+        <div id="boardRowThree">
+
+        </div>
+    </div>
+    <div id="footer">
+        <a href="https://github.com/Dylan-Gresham/TOP-TicTacToe" target="_blank">My GitHub</a>
+    </div>
 </body>
 </html>
