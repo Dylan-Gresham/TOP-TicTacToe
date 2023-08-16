@@ -31,6 +31,7 @@ button, a {
 }
 
 #nameAndTiles {
+    grid-row: 1;
     gap: 2rem;
     -webkit-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.75);
@@ -62,22 +63,27 @@ button, a {
 }
 
 #footer {
+    grid-row: 3;
+    margin-top: 0.5rem;
     -webkit-box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
     box-shadow: 0px -4px 3px -2px rgba(0,0,0,0.75);
 }
 
 #gameContainer {
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
 }
 
 #gameContainer > #gameStats {
+    grid-row: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0.5rem 0.4rem;
+    padding: 0 0.5rem;
 
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
@@ -87,4 +93,30 @@ button, a {
 #gameContainer > #gameStats > .playerStatsSpan {
     display: flex;
     gap: 1.5rem;
+}
+
+#gameContainer > #gameStats > .playerStatsSpan span {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer > #boardContainer {
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#gameContainer > #boardContainer > div {
+    grid-column: 2;
+    display: flex;
+}
+
+#gameContainer > #boardContainer > div > .tile {
+    width: calc(100%/3);
+    background-color: black;
 }
