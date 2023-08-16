@@ -3,6 +3,13 @@ const gbRowTwo = document.getElementById('boardRowTwo');
 const gbRowThree = document.getElementById('boardRowThree');
 const gbRows = [gbRowOne, gbRowTwo, gbRowThree];
 
+const playerOWins = document.getElementById('playerOWins');
+const playerOLosses = document.getElementById('playerOLosses');
+const playerOTies = document.getElementById('playerOTies');
+const playerXWins = document.getElementById('playerXWins');
+const playerXLosses = document.getElementById('playerXLosses');
+const playerXTies = document.getElementById('playerXTies');
+
 const Game = function(PlayerOne, PlayerTwo) {
     this.playerOne = PlayerOne;
     this.playerTwo = PlayerTwo;
