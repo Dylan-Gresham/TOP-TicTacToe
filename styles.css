@@ -118,5 +118,28 @@ button, a {
 
 #gameContainer > #boardContainer > div > .tile {
     width: calc(100%/3);
-    background-color: black;
+    border: none;
+}
+
+#gameContainer > #boardContainer > div > .tile:nth-child(2) {
+    border-left: 2px solid #606060;
+    border-right: 2px solid #606060;
+}
+
+#gameContainer > #boardContainer > .addTiles {
+    border-top: 2px solid #606060;
+    border-bottom: 2px solid #606060;
+}
+
+#gameContainer > #boardContainer > #playerOSign {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    background-color: red;
+}
+
+
+#gameContainer > #boardContainer > #playerXSign {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    background-color: red;
 }
